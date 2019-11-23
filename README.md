@@ -8,9 +8,9 @@ WS2812B RGB LED strips over networks.
 network packets describing the color setup and driving the WS2812B LED strip;
 * **luxaudio** - Go program that captures audio, does spectral analysis on it, and sends 
 a spectrum visualization to the strip over the network;
-* **luxfx** - TypeScript application with a few predefined effects. It can work both
-with locally-connected strip (connected to the same device running the program), 
-or following the protocol to drive network-attached strips; 
+* **luxfx** - TypeScript application with a few predefined effects. It can work either
+with a locally-connected strip (connected to the same device running the program), 
+or following the protocol to drive network-attached strips.
 
 ## Network Protocol
 The **luxsrv** component listens for UDP packets on port **`42170`**.
@@ -30,9 +30,9 @@ In raw mode, clients send the number of LED pixels to drive (up to 255),
 followed by a sequence of GRB components giving the color for each of the pixels.
 
 ```
-|    2    |     1    |        1        |       (PixelCount * 3)     | 
-|  Header | Raw Mode | LED Pixel Count |           GRB data         |
-| x4C x58 |    x0    |      x00-FF     | pixel0_grb, pixel1_grb ... |
+|    2    |       1     |        1        |              (PixelCount * 3)           | 
+|  Header |   Raw Mode  | LED Pixel Count |                 GRB data                |
+| x4C x58 |      x00    |      x00-FF     | px0g, px0r, px0b, px1g, px1r, px1b, ... |
 ```
 
 For example, to light up the 1st pixel in red, the 2nd one in green, and the 3rd in blue:
