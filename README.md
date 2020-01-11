@@ -4,7 +4,7 @@
 WS2812B RGB LED strips over networks.
 
 ## Software Components
-* **[luxsrv](https://github.com/ivkos/luxsrv)** - Lua program for the NodeMCU ESP2866 devkit that listens for 
+* **[luxsrv](https://github.com/ivkos/luxsrv)** - Lua program for the NodeMCU ESP8266 devkit that listens for 
 network packets describing the color setup and driving the WS2812B LED strip;
 * **[luxaudio](https://github.com/ivkos/luxaudio)** - Go program that captures audio, does spectral analysis on it, and sends 
 a spectrum visualization to the strip over the network;
@@ -49,4 +49,4 @@ For example, to light up the 1st pixel in red, the 2nd one in green, and the 3rd
 
 ## Hardware Components
 * **WS2812B RGB LED Strip** - [Buy on AliExpress](https://www.aliexpress.com/item/2036819167.html)
-* **NodeMCU ESP2866 DevKit** - [Buy on AliExpress](https://www.aliexpress.com/item/32656775273.html)
+* **NodeMCU ESP8266 DevKit** - [Buy on AliExpress](https://www.aliexpress.com/item/32656775273.html)
