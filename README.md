@@ -1,6 +1,6 @@
-# 🟥🟩🟦 Project Lux
+# Lux ❤️💚💙
 
-**Project Lux** is a collection of components for driving
+**Lux** is a collection of components for driving
 WS2812B RGB LED strips over networks.
 
 ## Software Components
