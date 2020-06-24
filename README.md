@@ -12,6 +12,9 @@ a spectrum visualization to the strip over the network;
 with a locally-connected strip (connected to the same device running the program), 
 or following the protocol to drive network-attached strips.
 
+## Demo
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OsAWr4fFMH0/0.jpg)](https://www.youtube.com/watch?v=OsAWr4fFMH0)
+
 ## Network Protocol
 The **luxsrv** component listens for UDP packets on port **`42170`**.
 
